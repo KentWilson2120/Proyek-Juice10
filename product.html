@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo-Icon/Logo_Kopi.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="Products">
+    <header>
+        <nav class="main-navigation">
+            <div class="nav-container">
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                <ul class="nav-menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a id="HA" href="product.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <input type="radio" name="filter" id="all" checked />
+        <input type="radio" name="filter" id="coffee" />
+        <input type="radio" name="filter" id="non" />
+        <input type="radio" name="filter" id="food" />
+        <input type="radio" name="filter" id="snack" />
+
+        <div class="filter-btn">
+            <label for="all">All</label>
+            <label for="coffee">Coffee</label>
+            <label for="non">Non Coffee</label>
+            <label for="food">Main Course</label>
+            <label for="snack">Snack</label>
+        </div>
+
+        <div class="grid">
+            <div class="card coffee">
+                <img src="./Pic-Product/Expresso.jpeg" />
+                <h3>Espresso</h3>
+                <p>Rp 15.000</p>
+            </div>
+
+            <div class="card coffee">
+                <img src="./Pic-Product/Americano.jpeg" />
+                <h3>Americano</h3>
+                <p>Rp 20.000</p>
+            </div>
+
+            <div class="card coffee">
+                <img src="./Pic-Product/Cappucinno.jpeg" />
+                <h3>Cappuccino</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <div class="card coffee">
+                <img src="./Pic-Product/Latte.jpeg" />
+                <h3>Latte</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <div class="card non">
+                <img src="./Pic-Product/Matcha.jpeg" />
+                <h3>Matcha</h3>
+                <p>Rp 35.000</p>
+            </div>
+
+            <div class="card non">
+                <img src="./Pic-Product/Velvet.jpeg" />
+                <h3>Red Velvet</h3>
+                <p>Rp 30.000</p>
+            </div>
+
+            <div class="card non">
+                <img src="./Pic-Product/Alpukat.jpeg" />
+                <h3>Jus Alpukat</h3>
+                <p>Rp 20.000</p>
+            </div>
+
+            <div class="card food">
+                <img src="./Pic-Product/NasiGorengT.jpeg" />
+                <h3>Nasi Goreng Telur</h3>
+                <p>Rp 30.000</p>
+            </div>
+
+            <div class="card food">
+                <img src="./Pic-Product/NasiGorengK.jpeg" />
+                <h3>Nasi Goreng Kampung</h3>
+                <p>Rp 35.000</p>
+            </div>
+
+            
+            <div class="card food">
+                <img src="./Pic-Product/AyampenyetB.jpeg" />
+                <h3>Ayam Penyet Belacan</h3>
+                <p>Rp 30.000</p>
+            </div>
+
+            
+            <div class="card food">
+                <img src="./Pic-Product/AyampenyetH.jpeg" />
+                <h3>Ayam Penyet Cabe Hijau</h3>
+                <p>Rp 30.000</p>
+            </div>
+
+            <div class="card snack">
+                <img src="./Pic-Product/Pisang_Coklat.jpeg" />
+                <h3>Pisang Coklat</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <div class="card snack">
+                <img src="./Pic-Product/KentangGoreng.jpeg" />
+                <h3>Kentang Goreng</h3>
+                <p>Rp 15.000</p>
+            </div>
+
+            
+            <div class="card snack">
+                <img src="./Pic-Product/TelurPoding.jpeg" />
+                <h3>Telur Poding</h3>
+                <p>Rp 10.000</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Daun Jati Cafe | All Rights Reserved
+    </footer>
+</body>
+
+</html>
