@@ -432,6 +432,12 @@ main {
   background: #aaa;
 }
 
+.error{
+    color: rgb(80, 3, 3);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 footer {
   background: #5c4033;
   color: white;
