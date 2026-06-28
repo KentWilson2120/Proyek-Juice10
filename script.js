@@ -64,26 +64,58 @@ purchaseForm.addEventListener("submit", function (e) {
 
     receiptDetails.innerHTML = `
         <h2>Order Receipt</h2>
-        <hr>
 
-        <h3>Customer Information</h3>
-        <p><strong>Name:</strong> ${fullName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Address:</strong> ${address}</p>
+        <table class="receipt-table">
+            <tr>
+                <th colspan="2">Customer Information</th>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>${fullName}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>${email}</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>${phone}</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>${address}</td>
+            </tr>
+        </table>
 
-        <h3>Order Details</h3>
-        <p><strong>Product:</strong> ${product}</p>
-        <p><strong>Quantity:</strong> ${quantity}</p>
-        <p><strong>Unit Price:</strong> ${formatRupiah(prices[product])}</p>
-        <p><strong>Total Price:</strong> ${formatRupiah(total)}</p>
+        <table class="receipt-table">
+            <tr>
+                <th colspan="2">Order Details</th>
+            </tr>
+            <tr>
+                <td>Product</td>
+                <td>${product}</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>${quantity}</td>
+            </tr>
+            <tr>
+                <td>Unit Price</td>
+                <td>${formatRupiah(prices[product])}</td>
+            </tr>
+            <tr>
+                <td>Total Price</td>
+                <td>${formatRupiah(total)}</td>
+            </tr>
+            <tr>
+                <td>Order Date</td>
+                <td>${today.toLocaleString("id-ID")}</td>
+            </tr>
+        </table>
 
-        <hr>
-        <p><strong>Order Date:</strong> ${today.toLocaleString("id-ID")}</p>
-
-        <h3>Thank You for Your Order!</h3>
+        <h3 class="thank-you">Thank You for Your Order!</h3>
     `;
-
+    
     receiptSection.style.display = "block";
 
     // Scroll ke receipt
@@ -94,4 +126,3 @@ purchaseForm.addEventListener("submit", function (e) {
 
 // Hitung total awal
 calculateTotal();
-

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Satisfy&display=swap');
 
 * {
-  margin: 1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -344,6 +344,7 @@ main {
   margin: auto;
   background: rgba(255,255,255,0.95);
   padding: 40px;
+  margin-bottom: 50px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
@@ -560,13 +561,77 @@ footer {
     flex-direction: column;
   }
 }
+
+.receipt-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;   /* Memberi jarak antar tabel */
+    background:white;
+}
+
+.receipt-table th{
+    background:#5c4033;
+    color:white;
+    padding:12px;
+    text-align:center;
+}
+
+.receipt-table td{
+    border:1px solid #ccc;
+    padding:10px 15px;
+}
+
+.receipt-table td:first-child{
+    width:180px;
+    font-weight:bold;
+    background:#f5f5f5;
+}
+
+
 #receiptDetails{
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+#receiptDetails{
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+#receiptDetails h2{
+    text-align: center;
+    color: #5c4033;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+#receiptDetails h3:last-child{
+    text-align: center;
+    margin-top: 20px;
+    color: #5c4033;
+    font-size: 25px;
+}
+
+#receiptSection{
+    display: none;
+}
+
+/* #receiptDetails{
     max-width:700px;
     margin:20px auto;
     background:#fff;
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    display: none;
 }
 
 #receiptDetails h2,
@@ -575,7 +640,7 @@ footer {
     margin-bottom:15px;
 }
 
-/* Membuat setiap data seperti baris tabel */
+Membuat setiap data seperti baris tabel
 #receiptDetails p{
     display:flex;
     justify-content:space-between;
