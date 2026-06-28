@@ -74,7 +74,6 @@ purchaseForm.addEventListener("submit", function (e) {
     }
 
     // Validasi nomor HP
-
     if (isNaN(phone)) {
         phoneError.textContent = "❌ Phone number must contain numbers only!";
         hasError = true;
@@ -147,8 +146,10 @@ purchaseForm.addEventListener("submit", function (e) {
         behavior: "smooth"
         
     });
+
     // Reset form
     purchaseForm.reset();
+
     // Reset total
     totalBox.textContent = "Rp 0";
 });
