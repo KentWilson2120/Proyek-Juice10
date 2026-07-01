@@ -29,7 +29,7 @@ main {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  padding: 0 30px;
+  padding: 0 80px;
 }
 
 .nav-menu {
@@ -628,4 +628,157 @@ footer {
 
 #receiptSection{
     display: none;
+}
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f6f4f1,#ebe5de,#f8f8f8);
+    padding:60px;
+}
+
+/* ===============================
+        JUDUL
+================================= */
+
+h2{
+    text-align:center;
+    font-size:42px;
+    color:#4E342E;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    font-size:17px;
+    margin-bottom:45px;
+}
+
+/* ===============================
+      CONTAINER
+================================= */
+
+.table-container{
+    max-width:1300px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:25px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.08),
+    0 5px 20px rgba(0,0,0,.04);
+}
+
+/* ===============================
+         TABLE
+================================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* Header */
+
+thead{
+    background:linear-gradient(90deg,#3E2723,#5D4037,#795548);
+}
+
+thead th{
+    color:white;
+    padding:22px;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* Body */
+
+tbody tr{
+    transition:.35s;
+}
+
+tbody td{
+    padding:24px 28px;
+    vertical-align:top;
+    border-bottom:1px solid #efefef;
+    font-size:15px;
+    line-height:28px;
+}
+
+/* Nama Produk */
+
+tbody td:first-child{
+
+    width:220px;
+
+    font-weight:600;
+
+    color:#5D4037;
+
+    font-size:18px;
+
+    background:#FFF9F5;
+}
+
+/* Hover */
+
+tbody tr:hover{
+
+    background:#fff5ee;
+
+    transform:scale(1.01);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+/* Strip */
+
+tbody tr:nth-child(even){
+
+    background:#fcfcfc;
+}
+
+/* Smooth */
+
+table,
+tbody,
+tr,
+td{
+
+    transition:.3s;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+body{
+
+padding:20px;
+
+}
+
+.table-container{
+
+overflow:auto;
+
+}
+
+table{
+
+min-width:850px;
+
+}
+
 }
